@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Hello WebSocket</title>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+<div>
+    <div>
+        <div>
+            <form>
+                <div>
+                    <label for="connect">WebSocket connection:</label>
+                    <button id="connect" type="submit">Connect</button>
+                    <button id="disconnect" type="submit" disabled="disabled">Disconnect</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table>
+                <thead>
+                <tr>
+                    <th>メッセージ</th>
+                </tr>
+                </thead>
+                <tbody id="messages">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<div>
+    <form action="/top"
+          th:object="${senderDto}"
+          th:action="@{/top}" method="post">
+        <div>
+            <label for="message">メッセージ</label>
+            <input id="message" type="text" th:field="*{message}"/>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn-primary" name="send">送信</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
